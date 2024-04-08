@@ -1,83 +1,62 @@
+<!DOCTYPE html>
 <html>
-  <style>
-    .weatherText {
-      font-family: 'Lato', 'sans-serif';
-      font-size: 24px;
-      text-align: center;
-    }
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
 
-    #weatherForm {
-      padding: 20px;
-    }
+.title {
+  color: grey;
+  font-size: 18px;
+}
 
-    #weatherSubmit {
-      color: white;
-      background-color: #083375;
-      padding: 5px 20px;
-      border-radius: 5px;
-      margin-top: 20px;
-    }
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
 
-    #weatherSubmit:hover {
-      cursor: pointer;
-    }
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .card {
-      border: 2px solid black;
-      width: 50%;
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
 
-      justify-content: center;
-      align-items: center;
-    }
-  </style>
-  <head>
-    <title class="alignct">Post Office Finder</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="card">
-      <h2 class="weatherText">Post Office Finder Using WebApp</h2>
-      <h1 id="error_head" style="display: none" value="{{error}}">{{error}}</h1>
+button:hover, a:hover {
+  opacity: 0.7;
+}
+</style>
+</head>
+<body>
 
-      <form class="weatherText" id="weatherForm" action="/" method="post">
-        Location Zip Code:
-        <input
-          class="weatherText"
-          id="weatherInput"
-          type="text"
-          name="zipCode"
-        /><br />
-        <input
-          class="weatherText"
-          id="weatherSubmit"
-          type="submit"
-          value="Submit"
-        />
-        <button
-          id="weatherSubmit"
-          class="weatherText"
-          onclick="document.getElementById(
-         'weatherInput').value = ''"
-        >
-          Clear
-        </button>
-      </form>
-    </div>
-    <!-- <script>
-      let err = document.getElementById('error_head');
-      function myFunction() {
-        alert('Please Enter the Valid Pin Code!');
-      }
-      if (err) {
-        myFunction();
-      }
-    </script> -->
-  </body>
+<h2 style="text-align:center">User Profile Card</h2>
+
+<div class="card">
+  <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+  <h1>John Doe</h1>
+  <p class="title">CEO & Founder, Example</p>
+  <p>Harvard University</p>
+  <div style="margin: 24px 0;">
+    <a href="#"><i class="fa fa-dribbble"></i></a> 
+    <a href="#"><i class="fa fa-twitter"></i></a>  
+    <a href="#"><i class="fa fa-linkedin"></i></a>  
+    <a href="#"><i class="fa fa-facebook"></i></a> 
+  </div>
+  <p><button>Contact</button></p>
+</div>
+
+</body>
 </html>
